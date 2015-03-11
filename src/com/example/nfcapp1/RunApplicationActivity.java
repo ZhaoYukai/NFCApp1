@@ -8,6 +8,7 @@ import android.nfc.NdefRecord;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
+import android.nfc.tech.NdefFormatable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -87,6 +88,20 @@ public class RunApplicationActivity extends Activity{
 				//到此为止，就可以放心的把东西写入NFC标签中了
 				ndef.writeNdefMessage(ndefMessage);
 				Toast.makeText(this , "NFC标签写入内容成功" , Toast.LENGTH_SHORT).show();
+			}
+			else{ //如果不是NDEF格式的
+				//尝试将这个非NDEF标签格式化成NDEF格式的
+				NdefFormatable format = NdefFormatable.get(tag);
+				//因为有些标签是只读的，所以这里需要判断一下
+				//如果format不为null，表示这个标签是可以接受格式化的
+				if(format != null){
+					format.connect();
+					format.format(ndefMessage); //同时完成了格式化和写入信息的操作
+					Toast.makeText(this , "NFC标签格式化写入成功" , Toast.LENGTH_SHORT).show();
+				}
+				else{
+					Toast.makeText(this , "该NFC标签无法被格式化" , Toast.LENGTH_SHORT).show();
+				}
 			}
 		} 
 		catch (Exception e) {
