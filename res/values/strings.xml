@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">自动运行Android应用程序</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="title_activity_auto_run_application">自动运行Android应用程序</string>
+    <string name="title_activity_installed_application_list">已安装应用程序</string>
+
+</resources>
