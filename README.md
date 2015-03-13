@@ -10,3 +10,17 @@ NFC标签大小：888字节<br>
 这个时候，将手机靠近NFC标签，就能把支付宝钱包这个应用程序的包名写入NFC标签中，同时手机会发出一条提示信息表示写入消息成功。<br>
 <br>
 把这个NFC写入的程序关闭，返回到手机的主界面上，再次把手机靠近NFC标签，此时，支付宝钱包这个应用程序就能自动打开，非常方便。<br>
+<br>
+<br>
+![image](https://github.com/ZhaoYukai/NFCApp1/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/1.jpeg)
+<br>
+<br>
+![image](https://github.com/ZhaoYukai/NFCApp1/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/2.jpeg)
+<br>
+<br>
+![image](https://github.com/ZhaoYukai/NFCApp1/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/3.jpeg)
+<br>
+<br>
+![image](https://github.com/ZhaoYukai/NFCApp1/blob/master/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/4.jpeg)
+<br>
+<br>
